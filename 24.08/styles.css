@@ -1,0 +1,244 @@
+body,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px 60px;
+}
+
+.logo {
+    width: 114px;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 80px;
+}
+
+.item-menu {
+    color: #737373;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: 300;
+    transition: all 300ms ease-out;
+    cursor: pointer;
+}
+
+.item-menu:hover {
+    color: #323232;
+}
+
+.wrapper-menu {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper-avatar {
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.wrapper-login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.login {
+    font-size: 18px;
+}
+
+.arrow-down-icon {
+    background-color: rgba(51, 51, 51, 0);
+    transition: all 300ms ease-out;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.arrow-down-icon:hover {
+    background-color: rgb(201, 201, 201);
+}
+
+.avatar {
+    background-color: #D9D9D9;
+    border-radius: 100%;
+}
+
+.wrapper-title-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-section {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.wrapper-title-section__history {
+    font-size: 20px;
+    color: #49BBBD;
+    font-weight: 600;
+    transition: all 300ms ease-out;
+    cursor: pointer;
+}
+
+.wrapper-title-section__history:hover {
+    filter: brightness(0.8);
+}
+
+.cards {
+    display: flex;
+    gap: 50px;
+}
+
+.card {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-end;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 12px 12px 20px #2e317d1a;
+    transition: all 300ms ease-out;
+    cursor: pointer;
+}
+
+.card:hover {
+    filter: brightness(0.8);
+    transform: translateY(-4px);
+}
+
+.card .wrapper-avatar {
+    margin-left: 0;
+}
+
+.card .avatar {
+    width: 42px;
+    height: 42px;
+}
+
+.card__name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #252641;
+}
+
+.card img {
+    border-radius: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.progress-bar__completed {
+    width: 70%;
+    height: 8px;
+    background-color: #49BBBD;
+    border-radius: 2px;
+}
+
+.progress-bar__not-comleted {
+    width: 30%;
+    height: 8px;
+    background-color: #D9D9D9;
+    border-radius: 2px;
+}
+
+.card__label-lesson {
+    width: 100%;
+    text-align: right;
+    color: #00000080;
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+button {
+    border: none;
+}
+
+.button {
+    background-color: #49BBBD;
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease-out;
+}
+.button--active{
+    cursor: pointer;
+}
+.button--active:hover {
+    transform: scale(1.1);
+}
+
+.button--not-active {
+    background-color: #47bbbd80;
+}
+
+.left-button {
+    transform: rotate(90deg);
+}
+
+.rigth-button {
+    transform: rotate(-90deg);
+}
+
+.button-icon {
+    fill: white;
+}
+
+.title-block{
+    font-size: 26px;
+}
+
+.bloc-category{
+    display: flex;
+    flex-wrap: wrap;
+    height: 750px;
+}
+
+.card{
+    width: 20%;
+    height: 45%;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__icon{
+    width: 30ox;
+    height: 30px;
+}
+
+.card__title{
+    font-size: 28px;
+}
+
+.card_text{
+    font-size: 16px;
+    color: gray;
+}
