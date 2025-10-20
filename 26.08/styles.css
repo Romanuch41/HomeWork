@@ -1,0 +1,64 @@
+.table {
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    display: flex;
+}
+
+.table__column1 {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table__column1__first,
+.table__column1__two,
+.table__column1__three{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.table__column1__first {
+    
+}
+.table__column1__had {
+}
+.table__column1__text {
+}
+.table__column1__two {
+    width: 350px;
+    height: 220px;
+}
+.table__column1__three {
+    width: 350px;
+    height: 100px;
+}
+.table__column2 {
+}
+.table__column2__first {
+}
+.table__column2__had {
+}
+.table__column2__text {
+}
+.table__column2__two {
+}
+.table__column2__three {
+}
+.table__column3 {
+}
+.table__column3__first {
+}
+.table__column3__had {
+}
+.table__column3__text {
+}
+.table__column3__two {
+}
+.table__column3__three {
+}
