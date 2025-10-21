@@ -36,34 +36,94 @@
     margin-bottom: 15px;
 }
 
-.table__column1__first {
-    
+/*task2*/
+
+.table-chat {
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    display: flex;
+    box-sizing: border-box;
 }
-.table__column1__had {
+.table-chat__column-user1,
+.table-chat__column-masseg,
+.table-chat__column-user2 {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 50px;
 }
-.table__column1__text {
+
+.table-chat__column-user1{
+    align-items: flex-end;
 }
-.table__column1__two {
+
+.table-chat__column-user1__user {
+    display: flex;
 }
-.table__column1__three {
+
+.table-chat__column-user1__user-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
-.table__column2__first {
+
+.table-chat__column-user1__user-name {
+    font-style: italic;
+    font-size: 18px;
 }
-.table__column2__had {
+
+.table-chat__column-user1__user-time {
+    color: rgb(153, 153, 153);
 }
-.table__column2__text {
+
+.table-chat__column-masseg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.table__column2__two {
+.table-chat__column-masseg__masseges {
+    width: 100%;
+    height: 30%;
 }
-.table__column2__three {
+.table-chat__column-masseg__masseges-content-user1 {
+    width: 100%;
+    height: 15%;
+    border: solid 1px black;
+    border-radius: 7px 7px 7px 0px;
+    background-color: rgb(248, 116, 116);
+    font-size: 18px;
+    margin-top: 10px;
 }
-.table__column3__first {
+.table-chat__column-masseg__masseges-content-user2 {
+    width: 100%;
+    height: 15%;
+    border: solid 1px black;
+    border-radius: 7px 7px 0px 7px;
+    background-color: rgb(96, 96, 255);
+    font-size: 18px;
+    margin-top: 10px;
 }
-.table__column3__had {
+.table-chat__column-user2 {
+    align-items: flex-start;
+    padding-top: 75px;
 }
-.table__column3__text {
+
+.table-chat__column-user2__user {
+    display: flex;
 }
-.table__column3__two {
+
+.table-chat__column-user2__user-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
-.table__column3__three {
+.table-chat__column-user2__user-name {
+    font-style: italic;
+    font-size: 18px;
+}
+.table-chat__column-user2__user-time {
+    color: rgb(153, 153, 153);
 }
