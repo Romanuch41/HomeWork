@@ -129,8 +129,140 @@
 }
 
 /*task 3*/
+.table {
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.table__column1,
+.table__column2,
+.table__column3 {
+    width: 33%;
+    height: 100%;
+    min-width: 300px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table__column1__first,
+.table__column1__two,
+.table__column1__three,
+.table__column2__first,
+.table__column2__two,
+.table__column2__three,
+.table__column3__first,
+.table__column3__two,
+.table__column3__three{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/*task2*/
+
+.table-chat {
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    display: flex;
+    box-sizing: border-box;
+}
+.table-chat__column-user1,
+.table-chat__column-masseg,
+.table-chat__column-user2 {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 50px;
+}
+
+.table-chat__column-user1{
+    align-items: flex-end;
+}
+
+.table-chat__column-user1__user {
+    display: flex;
+}
+
+.table-chat__column-user1__user-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.table-chat__column-user1__user-name {
+    font-style: italic;
+    font-size: 18px;
+}
+
+.table-chat__column-user1__user-time {
+    color: rgb(153, 153, 153);
+}
+
+.table-chat__column-masseg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.table-chat__column-masseg__masseges {
+    width: 100%;
+    height: 30%;
+}
+.table-chat__column-masseg__masseges-content-user1 {
+    width: 100%;
+    height: 15%;
+    border: solid 1px black;
+    border-radius: 7px 7px 7px 0px;
+    background-color: rgb(248, 116, 116);
+    font-size: 18px;
+    margin-top: 10px;
+}
+.table-chat__column-masseg__masseges-content-user2 {
+    width: 100%;
+    height: 15%;
+    border: solid 1px black;
+    border-radius: 7px 7px 0px 7px;
+    background-color: rgb(96, 96, 255);
+    font-size: 18px;
+    margin-top: 10px;
+}
+.table-chat__column-user2 {
+    align-items: flex-start;
+    padding-top: 75px;
+}
+
+.table-chat__column-user2__user {
+    display: flex;
+}
+
+.table-chat__column-user2__user-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.table-chat__column-user2__user-name {
+    font-style: italic;
+    font-size: 18px;
+}
+.table-chat__column-user2__user-time {
+    color: rgb(153, 153, 153);
+}
+
+/*task 3*/
 body{
     margin: 0;
+    overflow: hidden;
 }
 
 header{
@@ -143,6 +275,7 @@ main{
     width: 100vw;
     height: 94vh;
     background-color: rgb(49, 228, 159);
+    overflow: auto;
 }
 
 .head {
@@ -160,12 +293,12 @@ main{
 }
 
 .table-borders {
-    width: 100vw;
+    width: min-content;
     height: 94vh;
     display: flex;
     justify-content: center;
-    overflow-x: auto;
-    overflow-y: hidden;
+    gap: 15px;
+    overflow-y: auto;
 }
 
 .table-borders__column {
@@ -176,10 +309,11 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 15px;
     gap: 11px;
     overflow-y: auto;
     overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .table-borders__column__header{
