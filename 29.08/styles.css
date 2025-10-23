@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+}
+.login{
+    display: flex;
+    padding: 20px;
+}
+
+.login img{
+    border-radius: 25px;
+    width: 50vw;
+    height: 100%;
+}
+
+.login__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    width: 50vw;
+    gap: 15px;
+}
+
+.login__content__title{
+    font-size: 18px;
+    color: black;
+}
+
+.login__content-block-button{
+    width: 30%;
+    height: 63px;
+    border-radius: 25px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+}
+
+/*.login__content .login__content__title-imput{
+    display: flex;
+    align-items: flex-start;
+}*/
+
+.login__content-block-button button{
+    border-radius: 25px;
+    border: none;
+    width: 45%;
+    height: 63px;
+    transition: click 0.3s ease;
+    background-color: aqua;
+}
+
+.login__content-block-button button:first-child{
+    background-color: rgb(0, 201, 201);
+}
+
+.login__content__context{
+    color: gray;
+    font-size: 18px;
+}
+
+.login__content__title-imput{
+    font-size: 18px;
+    color: black;
+    margin-right: 345px;
+}
+
+.login__content__input_user{
+    border: solid aqua 1px;
+    border-radius: 25px;
+    background-color: white;
+    width: 45%;
+    height: 63px;
+
+}
+
+.login__content__input-button{
+    position: absolute;
+    right: 285px;
+    top: 62%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.login__content__spec-button{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login__content__spec-button span{
+    margin-right: 180px;
+    font-size: 14px;
+}
+
+.login__content__spec-button-checkbox{
+    margin: 0;
+}
+
+.login__content__spec-button-text-button{
+    font-size: 14px;
+    color: black;
+}
+
+.login__content__button-login{
+    width: 23%;
+    height: 42px;
+    background-color: rgb(0, 201, 201);
+    border: none;
+    border-radius: 25px;
+    margin-left: 221px;
+    margin-top: 40px;
+}
