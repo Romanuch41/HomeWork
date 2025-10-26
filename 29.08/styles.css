@@ -23,6 +23,9 @@ body{
 }
 
 .login__content__title{
+    min-width: 139px;
+    display: flex;
+    justify-content: center;
     font-size: 18px;
     color: black;
 }
@@ -57,6 +60,9 @@ body{
 }
 
 .login__content__context{
+    width: 100%;
+    display: flex;
+    justify-content: center;
     color: gray;
     font-size: 18px;
 }
@@ -64,7 +70,7 @@ body{
 .login__content__title-imput{
     font-size: 18px;
     color: black;
-    margin-right: 345px;
+    margin-right: 36%;
 }
 
 .login__content__input_user{
@@ -76,10 +82,28 @@ body{
 
 }
 
+.login__input-wrapper {
+    position: relative;
+    width: 45%; /* или соответствующий clamp, если адаптируете */
+    height: 63px;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.login__input-wrapper .login__content__input_user{
+    border: solid aqua 1px;
+    border-radius: 25px;
+    background-color: white;
+    width: 100%;
+    height: 63px;
+}
+
 .login__content__input-button{
     position: absolute;
-    right: 285px;
-    top: 62%;
+    right: 10px;
+    top: 50%;
     transform: translateY(-50%);
     background: none;
     border: none;
@@ -92,15 +116,18 @@ body{
     width: 45%;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .login__content__spec-button span{
-    margin-right: 180px;
+    min-width: 82px;
+    margin-right: 45%;
     font-size: 14px;
 }
 
 .login__content__spec-button-checkbox{
     margin: 0;
+    cursor: pointer;
 }
 
 .login__content__spec-button-text-button{
@@ -116,4 +143,86 @@ body{
     border-radius: 25px;
     margin-left: 221px;
     margin-top: 40px;
+    cursor: pointer;
+}
+
+@media (max-width : 600px){
+    .login{
+        width: clamp(956.0px, 99.583vw, 1912px);
+		height: clamp(535.0px, 55.729vw, 1070px);
+    }
+
+    .login img{
+        display: none;
+    }
+
+    .login__content{
+        width: clamp(463.0px, 48.229vw, 926px);
+		height: clamp(535.0px, 55.729vw, 1070px);
+    }
+
+    .login__content__title{
+        width: clamp(69.25px, 7.214vw, 138.5px);
+		/*height: clamp(10.5px, 1.094vw, 21px);*/
+    }
+
+    .login__content-block-button{
+        width: clamp(138.9px, 14.469vw, 277.8px);
+		height: clamp(31.5px, 3.281vw, 63px);
+    }
+
+    .login__content-block-button button{
+        width: clamp(62.5px, 6.51vw, 125px);
+		height: clamp(31.5px, 3.281vw, 63px);
+    }
+
+    .login__content__context{
+        width: clamp(271.225px, 28.253vw, 542.45px);
+		/*height: clamp(10.5px, 1.094vw, 21px);*/
+    }
+
+    .login__content__title-imput{
+        width: clamp(38.735px, 4.035vw, 77.47px);
+		/*height: clamp(10.5px, 1.094vw, 21px);*/
+    }
+
+    .login__content__input_user{
+        width: clamp(211.345px, 22.015vw, 422.69px);
+		/*height: clamp(33.5px, 3.49vw, 67px);*/
+    }
+
+    .login__content__input-button{
+        width: clamp(17.36px, 1.808vw, 34.72px);
+		height: clamp(17.0px, 1.771vw, 34px);
+    }
+
+    .login__content__spec-button{
+        width: clamp(208.345px, 21.703vw, 416.69px);
+		height: clamp(8.0px, 0.833vw, 16px);
+    }
+
+    .login__content__spec-button span{
+        width: clamp(41.015px, 4.272vw, 82.03px);
+		height: clamp(8.0px, 0.833vw, 16px);
+    }
+
+    .login__content__spec-button-checkbox{
+        width: clamp(6.5px, 0.677vw, 13px);
+		height: clamp(8.0px, 0.833vw, 16px);
+    }
+
+    .login__content__spec-button-text-button{
+        width: clamp(49.455px, 5.152vw, 98.91px);
+		height: clamp(8.0px, 0.833vw, 16px);
+    }
+
+    .login__content__button-login{
+        width: clamp(106.485px, 11.092vw, 212.97px);
+		/*height: clamp(21.0px, 2.188vw, 42px);*/
+    }
+
+    .login__input-wrapper{
+        width: clamp(208.344px, 21.703vw, 416.688px);
+		/*height: clamp(31.5px, 3.281vw, 63px);*/
+    }
 }
