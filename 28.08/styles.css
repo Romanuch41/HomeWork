@@ -1,0 +1,40 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.credit-card {
+    width: 80%;
+    height: 80%;
+    background-color: rgb(159, 205, 205);
+    border-radius: 30px;
+    padding-top: 25px;
+}
+
+.credit-card__title {
+    width: 60%;
+    height: 45px;
+    background-color: rgb(219, 100, 35);
+    color: white;
+    margin-left: -25px;
+    padding-left: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.credit-card__title span{
+    font-size: 26px;
+}
+.credit-card__input {
+}
+.credit-card__input__get-data {
+}
+.credit-card__input-titles {
+}
+.credit-card__input-dop {
+}
+.credit-card__input-dop__input-details {
+}
