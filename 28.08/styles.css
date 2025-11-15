@@ -12,6 +12,8 @@ body{
     background-color: rgb(159, 205, 205);
     border-radius: 30px;
     padding-top: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
 .credit-card__title {
@@ -29,12 +31,164 @@ body{
     font-size: 26px;
 }
 .credit-card__input {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    gap: 5px;
+    color: rgb(106, 138, 138);
 }
 .credit-card__input__get-data {
+    width: 48%;
+    height: 45px;
+    border-top: none;
+    border-right: none;
+    border-bottom: solid 2px black;
+    border-left: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    padding-left: 10px;
 }
 .credit-card__input-titles {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-left: 50px;
+    gap : 436px;
 }
 .credit-card__input-dop {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-left: 50px;
+    gap: 51px;
 }
 .credit-card__input-dop__input-details {
+    width: 13.3%;
+    height: 45px;
+    border-top: none;
+    border-right: none;
+    border-bottom: solid 2px black;
+    border-left: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+.credit-card__image{
+    width: 599px;
+    height: 565px;
+    margin-left: 60.7%;
+    position: relative;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.credit-card__image img{
+    width: 100%;
+    height: 100%;
+    margin-left: 183px;
+    margin-top: 20px;
+}
+
+.card{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-get-data {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #F5F5F5;
+    border-bottom: solid 1px gray;
+}
+
+.card-get-data__column1,  .card-get-data__column2{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 35px;
+    padding-left: 35px;
+    gap: 10px;
+}
+
+.card-get-data__column1 span, .card-get-data__column2 span{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+}
+
+.card-get-data__column1__user-name, .data__column1__email, .card-get-data__column1__set_pass{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.card-get-data__column1__user-name input, .card-get-data__column1__email input, .card-get-data__column1__set_pass input{
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    background-color: #F5F5F5;
+    margin-left: 5px;
+    width: 50%;
+    height: 45px;
+}
+
+.card-get-data__column1__user-name img, .card-get-data__column1__email img, .card-get-data__column1__set_pass img{
+    width: 40px;
+    height: 40px;
+}
+
+.card_get_data__column1__set-options{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card_get_data__column1__set-options input{
+    cursor: pointer;
+}
+
+.card-get-data__column2__data-block-one,  .card-get-data__column2__data-block-two{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.card-get-data__column2__data-block-one input, .card-get-data__column2__data-block-two input{
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    background-color: #F5F5F5;
+    width: 50%;
+    height: 45px;
+}
+
+.card-get-data__column2__data-block-two select{
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    background-color: #F5F5F5;
+    width: 50%;
+    height: 45px;
+    cursor: pointer;
+}
+
+.card-get-data__button{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-top: 30px;
+}
+
+.card-get-data__button button{
+    width: 120px;
+    height: 45px;
+    background-color: #008B8B;
+    margin-right: 30px;
 }
